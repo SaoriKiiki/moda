@@ -1,0 +1,25 @@
+<div class = "font">
+	
+<h1> Rango de tallas </h1>
+	<% @sizes.each do |size| %>
+	<%=size.num%>
+	<% end %>
+
+	<h2>Total de tallas en el rango</h2><%= @sizes.length %>
+
+<h1 > Anchos </h1>
+	<% @widths.each do |width| %>
+	<%=width.name%> 
+	<%=width.id%>
+	<% end %>
+
+	<h2>Total de sectores</h2><%= @widths.length %>	
+
+<h1> Altura </h1>
+	<% @heights.each do |height| %>
+	<%=height.name%>
+	<%=height.id%>
+	<% end %>
+
+	<h2>Total de nombres</h2><%= @heights.length %>
+<div>
